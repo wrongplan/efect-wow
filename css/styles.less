@@ -1,16 +1,17 @@
 img{
 	max-width: 100%;
+
 }
 
 @import url('https://fonts.googleapis.com/css?family=Muli:200,300,400,600,800');
-
+/*200,300,400,600,800*/
 body{
-
+font-size: 15px;
 font-family: 'Muli', sans-serif;
 
 }
 
-
+/*header*/
 
 .headerBG{
 	background:url('../img/headerbg.jpg');
@@ -25,5 +26,73 @@ font-family: 'Muli', sans-serif;
 }
 .header_main-title{
 	color: #fff;
-	font-weight: 100;
+	font-weight: 200;
+	font-size: 2em;
+}
+.header_appstore{
+	margin: 30px auto 30px auto;
+	opacity: 0.8;
+	&:hover{
+		opacity: 1;
+	}//hovwe
+}//header_appstore
+.header_mainscreen{
+	width: 50vw;
+	transform: rotate(20deg);
+	margin-bottom: 15px;
+}
+/*end of header*/
+
+/*section with mobile-pictures*/
+.mobileSection{
+	/*margin-top: 20px;*/
+
+}
+.mobileSection--title{
+	text-align: center;
+	margin-top: 40px;
+	h1{
+		font-size: 1.4em;
+	}
+	h3{
+		font-size: 1.2em;
+	}
+}
+
+/*reverse order*/
+.mobile-2{
+	order: 1;
+}
+.mobile-1{
+	order: 2;
+}
+
+.supportSectionBG{
+	background: url(../img/supportbg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.supportSection--title{
+	font-weight: 300;
+	color: #fff;
+	margin: 60px;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+
+}
+.supportSection--button{
+	background:#FFFFFF;
+	color:#fc3232;
+	height:60px;
+	padding:10px;
+	width:80%;
+	border-radius: 80px 80px 80px 80px;
+	-moz-border-radius: 80px 80px 80px 80px;
+	-webkit-border-radius: 80px 80px 80px 80px;
+	margin-bottom: 60px;
+	border:none;
+	width: 280px;
+	&:hover{
+		font-weight: bolder;
+}
 }
