@@ -1,8 +1,6 @@
 img{
 	max-width: 100%;
-
 }
-
 @import url('https://fonts.googleapis.com/css?family=Muli:200,300,400,600,800');
 /*200,300,400,600,800*/
 body{
@@ -16,6 +14,7 @@ font-family: 'Muli', sans-serif;
 .headerBG{
 	background:url('../img/headerbg.jpg');
 	background-size:cover;
+	min-height: 100vh;
 }
 .header_mobile--align{
 	text-align: center;
@@ -37,7 +36,7 @@ font-family: 'Muli', sans-serif;
 	}//hovwe
 }//header_appstore
 .header_mainscreen{
-	width: 50vw;
+	width: 50%;
 	transform: rotate(20deg);
 	margin-bottom: 15px;
 }
@@ -58,8 +57,18 @@ font-family: 'Muli', sans-serif;
 		font-size: 1.2em;
 	}
 }
+.mobileSection_image--flex{
+	justify-content: center;
+	display: flex;
+}
+.screen1{
+	width: 70%;
 
-/*reverse order*/
+}
+.screen2{
+	width: 70%;
+}
+/*reverse order text-picture*/
 .mobile-2{
 	order: 1;
 }
@@ -67,6 +76,7 @@ font-family: 'Muli', sans-serif;
 	order: 2;
 }
 
+// support section
 .supportSectionBG{
 	background: url(../img/supportbg.jpg);
 	background-repeat: no-repeat;
@@ -101,3 +111,113 @@ footer{
 background:#181818;
 padding:40px;
 }
+
+
+
+@media (min-width: 768px) {
+	//header
+
+.headerBG{
+
+	display: flex;
+}
+.header_mobile--align{
+	 display: flex;
+    justify-content: center;
+    align-items: center;
+
+}	
+	.header_mobile--align{
+	text-align: center;
+}
+
+.header_logo{
+	margin-top: 15vh;
+}
+.header_main-title{
+
+	font-size: 2em;
+}
+.header_appstore{
+	margin: 30px auto 30px auto;
+	opacity: 0.7;
+	width: 50%;
+	&:hover{
+		opacity: 1;
+	}//hovwe
+}//header_appstore
+.header_mainscreen{
+	width: 300px;
+	transform: rotate(20deg);
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+//end header
+
+/*section with mobile-pictures*/
+.mobileSection{
+	margin-top: 40px;
+	margin-bottom: 40px;
+
+}
+.mobileSection_container{
+	display: flex;
+	align-items: center;
+}
+.mobileSection--title{
+	h1{
+		font-size: 1.8em;
+	}
+	h3{
+		font-size: 1.2em;
+	}
+}
+// .mobileSection_image--flex{
+// 	justify-content: center;
+// 	display: flex;
+// }
+.screen1{
+	width: 70%;
+
+}
+.screen2{
+	width: 70%;
+}
+/*reverse order text-picture*/
+.mobile-2{
+	order: 0;
+}
+.mobile-1{
+	order: 0;
+}
+// support section
+
+
+.supportSection--title{
+	font-weight: 300;
+	font-size: 2em;
+	color: #fff;
+	margin: 50px 0 25px 0;
+	text-shadow: 1px 1px 1px rgba(131, 0, 9, 1);
+
+}
+
+
+footer{
+background:#181818;
+padding:40px;
+}
+}//media queries
+
+
+
+// Extra small (xs) devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+// Small (sm) devices (landscape phones, 576px and up)
+// @media (min-width: 576px) { ... }
+// Medium (md) devices (tablets, 768px and up)
+// @media (min-width: 768px) { ... }
+// Large (lg) devices (desktops, 992px and up)
+// @media (min-width: 992px) { ... }
+// Extra (xl) large devices (large desktops, 1200px and up)
+// @media (min-width: 1200px) { ... }
