@@ -10,6 +10,10 @@
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet/less" type="text/css" href="css/styles.less" />
 
+	<!-- animate css -->
+	<link rel="stylesheet" href="css/animate.css">
+	              <script src="js/wow.js"></script>
+
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/bootstrap.js"></script>
 
@@ -22,6 +26,11 @@
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
   	</script>	
 
+  	              <script>
+              new WOW().init();
+              </script>
+
+
 	<title></title> 
 </head>
 <body>
@@ -33,7 +42,7 @@
 
 				<div class="col-md-6">
 					<img src="img/logo.png" alt="" class="header_logo"/>
-					<h1 class="header_main-title">Best Shopping App</h1>
+					<h1 class="header_main-title wow slideInLeft" data-wow-duration="2s" data-wow-delay="1s">Best Shopping App</h1>
 				
 					<a hrer="#"><img src="img/appstore-badge.png" class="header_appstore">
 					</a>
@@ -52,7 +61,7 @@
 		<div class="row mobileSection_container">
 
 			<div class="col-md-6 mobile-1">
-				<img src="img/screen1.png" alt="" class="screen1"/>
+				<img src="img/screen1.png" alt="" class="screen1 wow slideInRight" data-wow-delay="0.5s"/>
 			</div>
 
 			<div class="col-md-6 mobileSection--title mobile-2">
@@ -95,6 +104,15 @@ Complicated management
 		<div class="row justify-content-center">
 			<a href="#"><button class="supportSection--button">Get Support</button></a>
 		</div>
+	</div>
+
+	<footer class="container-fluid d-flex justify-content-center">
+		<div class="row ">
+			<div class="col">
+				<img src="img/logo-footer.png" class="logofooter"/>
+			</div>
+		</div>
+	</footer>
 
 </body>
 </html>
